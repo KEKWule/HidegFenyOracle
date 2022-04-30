@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int ages[5];
+
+    for (int i = 0; i < 5; ++i) {
+        cin >> ages[i];
+    }
+    double min= ages[0];
+    for (int i=0; i<5;i++){
+        if (min>ages[i]){
+            min = ages[i];
+        }
+    }
+    double x = 50-((50*min)/100);
+    cout << x;
+    return 0;
+}
