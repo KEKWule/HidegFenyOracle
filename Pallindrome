@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int Palindrome(int n)
+{
+// Find reverse of n
+int reverse = 0;
+for (int i = n; i > 0; i /= 10)
+reverse = reverse*10 + i%10;
+// To check if they are same
+return (n==reverse);
+}
+
+//bool isPalindrome(int x) {
+    //complete the function
+    
+//}
+
+int main() {
+    int n;
+    cin >>n;
+    
+    if(Palindrome(n)) {
+        cout <<n<<" is a palindrome";
+    }
+    else {
+        cout << n<<" is NOT a palindrome";
+    }
+    return 0;
+}
